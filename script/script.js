@@ -116,6 +116,9 @@ function pronounceWord(word) {
   window.speechSynthesis.speak(utterance);
 }
 document.getElementById("search-btn").addEventListener("click", ()=>{
+     
+    addBtnOutline()
+
     const input=document.getElementById("search-input")
     const inputValue=input.value.trim().toLowerCase()
     fetch("https://openapi.programming-hero.com/api/words/all")
