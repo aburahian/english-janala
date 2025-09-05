@@ -48,8 +48,8 @@
   
 </div>
     </header>
-    <section class="flex flex-col-reverse md:flex-row justify-between items-center w-11/12 mx-auto mt-14">
-        <div class="flex-1 space-y-3 text-center md:text-left">
+    <section class="flex flex-col-reverse lg:flex-row justify-between items-center w-11/12 mx-auto mt-14">
+        <div class="flex-1 space-y-3 text-center lg:text-left">
             <h1 class="text-4xl font-bold"><span class="text-[#00BCFF]">English</span> is easy!!</h1>
             <p class="text-2xl font-medium text-[#181818]">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
             <input type="text" placeholder="Type here name" class="input" /> <br>
@@ -65,19 +65,45 @@
     <section class="w-11/12 mx-auto mt-32">
         <div class="text-center">
              <h1 class="text-4xl font-bold"><span class="text-[#00BCFF]"> Let's </span>Learn Vocabularies</h1>
+            
             <div id="lesson-container" class="flex flex-wrap justify-center space-x-4">
+
                  
             </div>
          </div>
     </section>
+    <section class="flex justify-center mt-10">
+        <div class="join">
+  <div>
+    <label class="input validator join-item">
+     
+      <input id="search-input" type="email" placeholder="Search your word" required />
+      <button id="search-btn" class="btn btn-neutral join-item ml-5">Search</button>
+    </label>
+    
+</div>
+    </section>
     <section class="w-11/12 mx-auto mt-14">
-        <div id="card-container" class="bg-[#F8F8F8] p-7 grid grid-rows-1 md:grid-cols-3 gap-11">
+             <div id="spinner-div" class="text-center mb-6 hidden">
+                <span class="loading loading-spinner text-primary"></span>
+             </div>
+        <div id="card-container" class="bg-[#F8F8F8] p-7 grid grid-rows-1 lg:grid-cols-3 gap-11">
             <div class="text-center space-y-5 col-span-full p-8">
                 
                 <p class="bangla-font text-sm ">আপনি এখনো কোন Lesson Select করেনি।</p>
                 <h1 class="text-4xl font-medium">একটি Lesson Select করুন।</h1>
             </div>
         </div>
+    </section>
+
+    <section>
+        <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div id="modal-box" class="modal-box space-y-3">
+     
+  </div>
+</dialog>
     </section>
     <script src="./script/script.js"></script>
 </body>
